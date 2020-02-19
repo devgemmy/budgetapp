@@ -1,0 +1,234 @@
+/****************************************/
+/*General Part*/
+/****************************************/
+
+/*
+1. Web Layout
+2. Bootstrap 4
+3. Font Awesome Icons
+4. Animation
+5. JavaScript Basics
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 18px;
+    font-family: 'segoe ui';
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #555;
+    font-family: 'segoe ui';
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.right { float: right; }
+.red { color: #ff5049 !important; }
+.red-focus:focus { border: 1px solid #ff5049 !important; }
+
+/****************************************/
+/*Top Part*/
+/****************************************/
+
+.top {
+    min-height: 330px;
+    background-image: url('img/waterdrop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.top-layout {
+    min-height: 330px;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.budget {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.budget_title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.budget_value{
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.budget_income {
+    background-color: #23afaa; 
+}
+
+.budget_expenses {
+    background-color: #ff4642
+}
+
+.budget_income, .budget_expenses {
+    min-width: 360px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.budget_title,
+.budget_title-month,
+.budget_value,
+.budget_income-value, 
+.budget_expenses-value, 
+.budget_expenses-percentage{
+    color: #fff;
+}
+
+.budget_income-text, 
+.budget_expenses-text{
+    width: 45%;
+    color: #33393a;
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family:'segoe ui';
+}
+
+.budget_income-value,
+.budget_expenses-value,
+.budget_income-text,
+.budget_expenses-text,
+.budget_income-percentage,
+.budget_expenses-percentage {
+    display: inline-table;
+}
+
+.budget_income-percentage{
+    margin-left: 2.7em; 
+}
+
+.budget_expenses-percentage {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3px;
+    font-size: 13px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+/****************************************/
+/*Bottom Part*/
+/****************************************/
+
+.bottom {
+    width: 100%;
+}
+
+.add {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 10px;
+    border-bottom: 1px solid #d0cdcd;
+}
+
+.add_container {
+    width: 50%;
+    margin: 10px auto;
+    padding-left: 5%;
+    padding-bottom: 8px;
+}
+
+.add_type {
+    border: 1px solid #adabab;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.add_description, .add_value {
+    border: 1px solid #adabab;
+    padding: 3px;
+    border-radius: 5px;
+    text-indent: 12px;
+    font-size: 18px;
+}
+
+.add_description {
+    width: 60%;
+}
+
+.add_value {
+    width: 15%;
+}
+
+.item_add-btn, .item_delete-btn {
+    width: 30px;
+    top: 7px;
+    left: 2px;
+    position: relative;
+}
+
+.container {
+    width: 60%;
+    min-height: 300px; 
+    margin: 0px auto;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.income, .expenses {
+    width: 50%;
+}
+
+.income_title {
+    color: #23afaa;
+    text-transform: uppercase;
+}
+
+.expenses_title {
+    color: #ff4642;
+    text-transform: uppercase;
+}
+
+.income_list, .expenses_list {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.item {
+    width: 100%;
+    border-top: 1px solid #adabab;
+    border-bottom: 1px solid #adabab; 
+    display: flex;
+    flex-direction: row;
+}
+
+.item_description {
+    width: 70%;
+}
+
+/* div {
+    border: 1px solid red;
+} */
+
